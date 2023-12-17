@@ -12,7 +12,8 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-h1, h2 {
+h1,
+h2 {
   color: #333;
 }
 
@@ -40,14 +41,14 @@ button {
   border: none;
 }
 
-
 table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 20px;
 }
 
-th, td {
+th,
+td {
   border: 1px solid #ddd;
   padding: 10px;
   text-align: left;
@@ -60,9 +61,27 @@ th {
 
 a {
   text-decoration: none;
-
 }
 
 a:hover {
   text-decoration: underline;
+}
+
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 600px) {
+  input {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  table {
+    overflow-x: auto;
+    display: block;
+  }
+
+  th,
+  td {
+    white-space: nowrap;
+  }
 }
